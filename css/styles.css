@@ -1,0 +1,20 @@
+/* mexican cuisine:  #ffca3c #FFAF6C #FFC17C #FCEB8D #94E1A3 #6C9B8A } */
+
+/* backgrounds */
+.bg-orange { background-color: #ffca3c }
+.bg-peach { background-color: #FFAF6C }
+.bg-lt-peach { background-color: #FFC17C }
+.bg-lt-yellow { background-color: #FCEB8D }
+.bg-lt-green { background-color: #94E1A3 }
+.bg-green { background-color: #6C9B8A }
+
+/* fonts */
+.text-orange { color: #ffca3c }
+.text-peach { color: #FFAF6C }
+.text-lt-peach { color: #FFC17C }
+.text-lt-yellow { color: #FCEB8D }
+.text-lt-green { color: #94E1A3 }
+.text-green { color: #6C9B8A }
+
+.indie-logo{ font-family: 'Indie Flower', cursive;
+    font-family: 'Lora', serif; }
