@@ -1,6 +1,7 @@
 /* mexican cuisine:  #ffca3c #FFAF6C #FFC17C #FCEB8D #94E1A3 #6C9B8A } */
 
 /* backgrounds */
+.bg-white { background-color: white; }
 .bg-orange { background-color: #ffca3c }
 .bg-peach { background-color: #FFAF6C }
 .bg-lt-peach { background-color: #FFC17C }
@@ -18,3 +19,5 @@
 
 .indie-logo{ font-family: 'Indie Flower', cursive;
     font-family: 'Lora', serif; }
+
+.don-font { font-family: "Don Jose Black"; }

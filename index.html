@@ -13,6 +13,7 @@
 
   <style>
  /* backgrounds */
+.bg-white { background-color: white; }
 .bg-orange { background-color: #ffca3c; }
 .bg-peach { background-color: #FFAF6C }
 .bg-lt-peach { background-color: #FFC17C }
@@ -28,7 +29,11 @@
 .text-lt-green { color: #94E1A3 }
 .text-green { color: #6C9B8A }
 
-.indie-logo{ font-family: 'Indie Flower', cursive; font-family: 'Lora', serif; font-size: 50px;}
+.indie{ font-family: 'Indie Flower', cursive; font-family: 'Lora', serif; font-size: 50px;}
+.logo-font{ font-family: Amaranth Regular; }
+
+
+img { width: 475px; height: 60px; }
   </style>
 </head>
 
@@ -36,9 +41,12 @@
 
 <div class="container-fluid p-0">
 
-    <nav class="navbar navbar-expand-lg text-green bg-orange position-sticky top-0">
+    <nav class="navbar navbar-expand-lg text-green bg-white position-sticky top-0 position-relative">
       <div class="container-fluid">
-        <a class="navbar-brand text-green display-1 indie-logo" href="#">Cocina Mexicana</a>
+        <div class="d-flex col-5 p-2">
+          <a><img src="images/logo.png" alt=""></a>
+        </div>
+        
 
 
 
