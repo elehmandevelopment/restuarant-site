@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cocina Mexicana</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
 
   <style>
  /* backgrounds */
 .bg-white { background-color: white; }
-.bg-orange { background-color: #ffca3c; }
+.bg-orange { background-color: #EA9937; }
+.bg-lt-orange{ color: #ffc107 }
 .bg-peach { background-color: #FFAF6C }
 .bg-lt-peach { background-color: #FFC17C }
 .bg-lt-yellow { background-color: #FCEB8D }
@@ -22,18 +23,24 @@
 .bg-green { background-color: #6C9B8A }
 
 /* fonts */
-.text-orange { color: #ffca3c }
+.text-orange { color: #EA9937 }
+.text-lt-orange{ color: #ffc107 }
+.text-lt-orange a{ color: #ffc107 }
+.text-lt-orange a:hover{ color: #94E1A3 }
 .text-peach { color: #FFAF6C }
 .text-lt-peach { color: #FFC17C }
 .text-lt-yellow { color: #FCEB8D }
 .text-lt-green { color: #94E1A3 }
 .text-green { color: #6C9B8A }
 
-.indie{ font-family: 'Indie Flower', cursive; font-family: 'Lora', serif; font-size: 50px;}
-.logo-font{ font-family: Amaranth Regular; }
+.logo-font{ font-family: 'Amaranth', sans-serif; }
+.nav-font { font-size: xx-large; }
+.navbar-toggler { border-color: #EA9937; border-width: 3px; }
+.navbar-light { background-color:#EA9937 }
+button.collapsed.navbar-toggler.navbar-light { border: none; }
 
 
-img { width: 475px; height: 60px; }
+img { width: 475px; height: 55px; }
   </style>
 </head>
 
@@ -41,26 +48,43 @@ img { width: 475px; height: 60px; }
 
 <div class="container-fluid p-0">
 
-    <nav class="navbar navbar-expand-lg text-green bg-white position-sticky top-0 position-relative">
+    <nav class="navbar navbar-expand-lg text-lt-orange logo-font nav-font bg-white position-sticky top-0">
       <div class="container-fluid">
-        <div class="d-flex col-5 p-2">
-          <a><img src="images/logo.png" alt=""></a>
-        </div>
-        
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+          <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-lt-orange"></span>
+          </button>
+          <!-- End Nav Logo Button -->
 
-
-
-
-
-
+          <div class="collapse navbar-collapse justify-content-end p-1" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item p-1">
+                <a class="nav-link active" aria-current="page" href="#">Menu</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#">Order Online</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#">Catering</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#">Gift Cards</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Nav Items List -->
+      
       </div>
     </nav>
 
-    <header class="position-relative">
+    <main>
       <div></div>
 
 
-    </header>
+    </main>
 
   
 

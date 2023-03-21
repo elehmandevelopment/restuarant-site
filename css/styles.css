@@ -2,7 +2,10 @@
 
 /* backgrounds */
 .bg-white { background-color: white; }
-.bg-orange { background-color: #ffca3c }
+.bg-orange { background-color: #EA9937 }
+.bg-lt-orange{ color: #ffc107 }
+.text-lt-orange a{ color: #ffc107 }
+.text-lt-orange a:hover{ color: #94E1A3 }
 .bg-peach { background-color: #FFAF6C }
 .bg-lt-peach { background-color: #FFC17C }
 .bg-lt-yellow { background-color: #FCEB8D }
@@ -10,14 +13,14 @@
 .bg-green { background-color: #6C9B8A }
 
 /* fonts */
-.text-orange { color: #ffca3c }
+.text-orange { color: #EA9937 }
+.text-lt-orange{ color: #ffc107 }
 .text-peach { color: #FFAF6C }
 .text-lt-peach { color: #FFC17C }
 .text-lt-yellow { color: #FCEB8D }
 .text-lt-green { color: #94E1A3 }
 .text-green { color: #6C9B8A }
 
-.indie-logo{ font-family: 'Indie Flower', cursive;
-    font-family: 'Lora', serif; }
+.logo-font{ font-family: 'Amaranth', sans-serif; }
+.nav-font-size { font-size: x-large }
 
-.don-font { font-family: "Don Jose Black"; }
