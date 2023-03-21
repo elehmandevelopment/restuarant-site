@@ -15,7 +15,7 @@
  /* backgrounds */
 .bg-white { background-color: white; }
 .bg-orange { background-color: #EA9937; }
-.bg-lt-orange{ color: #ffc107 }
+.bg-lt-orange{ background-color: #ffc107;}
 .bg-peach { background-color: #FFAF6C }
 .bg-lt-peach { background-color: #FFC17C }
 .bg-lt-yellow { background-color: #FCEB8D }
@@ -50,6 +50,11 @@ nav{ z-index: 50; }
     box-shadow: none;
 }
 main { height: 80vh; width: 100% }
+.border-edge { border-top-right-radius: 100% 37%; border-top-left-radius: 100% 37%; }
+.section1 { height: 45vh; width: 100% }
+.section2 { height: 90vh; width: 100% }
+.footer { height: 13vh; width: 100%; }
+.footer-font { font-size: x-large; }
 
   </style>
 </head>
@@ -100,15 +105,87 @@ main { height: 80vh; width: 100% }
         <button type="button" class="btn btn-warning btn-large m-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
       </div>
 
-
     </main>
+    <!-- end front page with bg image, btn, + logo -->
 
-    <div class="position-relative">
+    <div class="row justify-content-center">
+      <div class="d-flex position-relative section1 justify-content-center align-items-end col-12 m-5">
+        <div class="display-3 justify-content-center text-start col-6 m-3 logo-font text-green">100% Organic <br> Authentic Mexican Cuisine 
+          </div>
+        <div class="text-end m-3 fs-2 logo-font text-green">Cocina Mexicana boasts one of the cleanest mexican menus in the state of Colorado. <br> Rated #1 mexican in the valley for 10+ years.</div>
+      </div>
 
+      <!-- Menu Items: Tacos, Tortas, Burritos, Caldillos, Platos -->
+
+      <div class="row display-4 d-flex position-relative section2 bg-lt-orange border-edge align-items-center justify-content-center p-0 flex-wrap">
+        <div class="display-2 align-self-end text-center logo-font text-white">Menú Especiales</div>
+        <div class="p-5 card-group">
+          <div class="card m-1 " style="width: 18rem;">
+            <img src="https://www.samtell.com/hs-fs/hubfs/Blogs/Four-Scrumptous-Tacos-Lined-up-with-ingredients-around-them-1.jpg?width=1800&name=Four-Scrumptous-Tacos-Lined-up-with-ingredients-around-them-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center logo-font text-lt-peach">Tacos</p>
+            </div>
+          </div>
+          <div class="card m-1 " style="width: 18rem;">
+            <img src="https://www.thespruceeats.com/thmb/Te1RNxv7I_FnERi6AL2zc_PN6IU=/2000x1334/filters:no_upscale():max_bytes(150000):strip_icc()/Getty-Torta-587bd39c5f9b584db3c58a61.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center logo-font text-lt-peach">Tortas</p>
+            </div>
+          </div>
+          <div class="card m-1 " style="width: 18rem;">
+            <img src="https://www.pennlive.com/resizer/Hu07cS244ujq-4RkyAwlIBE0Plo=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.pennlive.com/home/penn-media/width2048/img/life/photo/24338457-standard.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center logo-font text-lt-peach">Burritos</p>
+            </div>
+          </div>
+          <div class="card m-1 " style="width: 18rem;">
+            <img src="https://i.pinimg.com/originals/02/6f/03/026f0306d0365041bf62dbbe0cd3c330.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center logo-font text-lt-peach">Caldillos</p>
+            </div>
+          </div>
+          <div class="card m-1 " style="width: 18rem;">
+            <img src="https://cdn.viajala.com/img/blog/5-platos-tipicos-mexico/enchiladas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center logo-font text-lt-peach">Platos</p>
+            </div>
+          </div>
+      </div>
+      </div>
     </div>
+    <!-- end menu items  -->
+
+    <footer class="bg-lt-orange footer border border-top-white">
+      <div class="row">
+        <div class="col-6 p-3 d-flex justify-content-center text-white footer-font">Open Monday to Sunday: 11AM - 11PM</div>
+        <div class="col-6 p-3 d-flex justify-content-center"><a class="text-white footer-font" href="#">Call Us: +1-888-888-888</a></div>
+          
+      </div>
+    </footer>
 
 
 
+
+</div>
+<!-- end of container-fluid -->
+
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Order Now</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        item 1 item 2 item 3
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Place Order</button>
+        </div>
+    </div>
+    </div>
 </div>
 
 </body>
