@@ -41,13 +41,15 @@
 
 
 .img-logo { width: 475px; height: 55px; }
-.img-main { width: 100vw; height: 100vh; z-index: 10; border-bottom-right-radius: 100% 37%; border-bottom-left-radius: 100% 37%;}
-.img-logo-main { z-index: 15 }
+.img-main { width: 100vw; height: 100vh; z-index: 15; border-bottom-right-radius: 100% 37%; border-bottom-left-radius: 100% 37%;}
+.img-logo-main { width: 37%; z-index: 25; }
+nav{ z-index: 50; }
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
     box-shadow: none;
 }
+main { height: 80vh; width: 100% }
 
   </style>
 </head>
@@ -88,16 +90,22 @@
       </div>
     </nav>
 
-    <main class="position-relative">
-      <div id="imageLayer" class="position-absolute top-0 start-0">
+    <main class="position-relative d-flex justify-content-center ">
+      <div id="imageLayer" class="top-0 start-0 position-absolute">
         <img class="img-main d-md" src="https://wallpaperaccess.com/full/1412206.jpg" alt="">
+      </div>
+
+      <div id="textLayer" class="d-flex flex-column position-absolute justify-content-center align-items-center h-100 w-100">
         <img class="img-logo-main" src="images/logo-white.png" alt="">
+        <button type="button" class="btn btn-warning btn-large m-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
       </div>
 
 
     </main>
 
-  
+    <div class="position-relative">
+
+    </div>
 
 
 
