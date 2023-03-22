@@ -1,6 +1,6 @@
 # Cocina Mexicana 
 
-### This is a front-end website I made in honor of the inevitable opening of my brother-in-law's restuarant.
+#### This is a front-end website I made in honor of the inevitable opening of my brother-in-law's restuarant.
 
 <img src="images/site-Screenshot.png">
 
