@@ -7,10 +7,13 @@
     <title>Cocina Mexicana</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/browser-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>.contact-Form{ padding: 5% 25% 5% 20%}</style>
 
 </head>
 <body>
@@ -29,7 +32,7 @@
               <div class="collapse navbar-collapse justify-content-end p-1" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item p-1">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item p-1">
                     <a class="nav-link" href="#">Menu</a>
@@ -49,6 +52,39 @@
           
           </div>
         </nav>
+
+        <form class="contact-Form">
+            <h1 class="logo-font">Contact Us</h1>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label logo-font">Name</label>
+                <input type="text" class="form-control logo-font" id="formGroupExampleInput" placeholder="Enter your name">
+              </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label logo-font">Email</label>
+                <input type="text" class="form-control logo-font" id="formGroupExampleInput" placeholder="Enter your email">
+              </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label logo-font">Phone</label>
+                <input type="text" class="form-control logo-font" id="formGroupExampleInput" placeholder="Enter your phone-number +1(123)-888-8888">
+              </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label logo-font">Message</label>
+                <textarea name="career[message]" class="form-control logo-font" tabindex="4"
+                placeholder="" required></textarea>
+              </div>
+            <button type="submit" class="btn btn-warning logo-font">Contact Us</button>
+          </form>
+          <!-- end contact form -->
+
+
+          <footer class="bg-lt-orange footer border border-top-white">
+            <div class="row">
+              <div class="col-6 p-3 d-flex justify-content-center text-white footer-font">Open Monday to Sunday: 11AM - 11PM</div>
+              <div class="col-6 p-3 d-flex justify-content-center"><a class="text-white footer-font" href="#">Call Us: +1(123)-888-8888</a></div>
+                
+            </div>
+          </footer>
+
     </div>
     
 </body>
